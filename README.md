@@ -1,4 +1,4 @@
-# Doctor-Patient-Conversation-Analysis-
+# Doctor-Patient-Conversation-Analysis-NLP
 This project focuses on analyzing doctor-patient conversations using Natural Language Processing (NLP) techniques to extract meaningful insights, detect emergency cases, and classify conversations into different risk levels. The goal is to  detect symptoms, and flag high-risk cases that require immediate attention.
 
 1. Data Preprocessing & Cleaning:
@@ -27,7 +27,7 @@ Deployment: Google Colab (for training) and ngrok (for running the dashboard)
 ✅ An emergency detection system that flags urgent cases
 ✅ An interactive dashboard to visualize findings
 
-# cancer patient analysis
+# cancer patient analysis(kNN & RF)
 This model is designed for classification tasks using K-Nearest Neighbors (KNN) and Random Forest, leveraging structured data from Google Sheets. It aims to categorize entities based on extracted features and optimize performance using hyperparameter tuning and cross-validation.
 This project analyzed a dataset containing 23 health-related features of cancer patients. It explores different machine learning techniques to predict risk levels (High, Medium, Low) and optimize model accuracy.
 
