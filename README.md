@@ -45,9 +45,10 @@ This project analyzes doctor-patient conversations using NLP to extract insights
 - **Sentiment Analysis:** Classifying patient conversations as positive, neutral, or negative using TextBlob/VADER.
 - **Symptom and Risk Classification:** Training a model (Random Forest, CountVectorizer) to classify conversations into low-risk and high-risk based on symptoms and distress levels.
 - **Emergency Detection System:** Detecting critical symptoms (e.g., severe pain, fatigue, dizziness, bleeding, tumor growth) and psychological distress (e.g., anxiety, hopelessness, fear) using keyword detection and NLP models.
-- **Interactive Dashboard for Insights:** Developing a dashboard (Streamlit/Dash) to visualize findings and flag emergency cases.
+- **Interactive Dashboard for Insights:** Developing a dashboard (plotly/Dash) to visualize findings and flag emergency cases.
 ## 📊 Dashboard Preview  
-![Dashboard Screenshot](https://raw.githubusercontent.com/chhavi007-bit/Doctor-Patient-Conversation-Analysis-/main/capture.png)
+![analyzer](https://github.com/user-attachments/assets/a80473b9-a7bd-445c-9a51-463121c04bb5)
+
 
 
 
@@ -59,7 +60,7 @@ This project analyzes doctor-patient conversations using NLP to extract insights
 - NLTK, TextBlob
 - Scikit-learn (sklearn)
 - WordCloud
-- Dash/Streamlit (for visualization)
+- Dash/plotly (for visualization)
 - Google Colab (for training)
 - ngrok (for running the dashboard)
 
