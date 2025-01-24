@@ -46,7 +46,10 @@ This project analyzes doctor-patient conversations using NLP to extract insights
 - **Symptom and Risk Classification:** Training a model (Random Forest, CountVectorizer) to classify conversations into low-risk and high-risk based on symptoms and distress levels.
 - **Emergency Detection System:** Detecting critical symptoms (e.g., severe pain, fatigue, dizziness, bleeding, tumor growth) and psychological distress (e.g., anxiety, hopelessness, fear) using keyword detection and NLP models.
 - **Interactive Dashboard for Insights:** Developing a dashboard (Streamlit/Dash) to visualize findings and flag emergency cases.
-![Alt Text](Capture.png)
+## 📊 Dashboard Preview  
+![Dashboard Screenshot](https://raw.githubusercontent.com/chhavi007-bit/Doctor-Patient-Conversation-Analysis-/main/capture.png)
+
+
 
 #### **Technologies Used**
 
