@@ -1,25 +1,69 @@
-# Doctor-Patient-Conversation-Analysis-NLP
-This project focuses on analyzing doctor-patient conversations using Natural Language Processing (NLP) techniques to extract meaningful insights, detect emergency cases, and classify conversations into different risk levels. The goal is to  detect symptoms, and flag high-risk cases that require immediate attention.
+# Cancer Patient Analysis & Doctor-Patient Conversation Analysis
 
-1. Data Preprocessing & Cleaning:
-- Removing noise (special characters, numbers, stopwords) and standardizing text through lemmatization.
-Exploratory Data Analysis (EDA):
-- Identifying common symptoms, treatment discussions, and emotional trends in patient conversations.
-Sentiment Analysis:
-- Categorizing patient conversations as positive, neutral, or negative using TextBlob/VADER to assess emotional impact.
-Symptom and Risk Classification:
-- Training a machine learning model (Random Forest, Logistic Regression, countvector) to classify conversations into low-risk and high-risk categories based on symptoms and distress levels.
-Emergency Detection System:
-- Identifying critical symptoms (e.g., severe pain, fatigue, dizziness, bleeding, tumor growth) and psychological distress (e.g., anxiety, hopelessness, fear) using keyword detection and NLP models.
-Interactive Dashboard for Insights:
-- Developing a dashboard (Streamlit/Dash) to visualize key findings, trends, and flagged emergency cases.
+## Overview
 
-2. Programming Language: Python
-Libraries & Tools: Pandas, NumPy, Matplotlib, Seaborn, NLTK, TextBlob, Scikit-learn, WordCloud, Dash/Streamlit
-Machine Learning Models: Random Forest, Logistic Regression, CountVectorizer (for text vectorization)
-Deployment: Google Colab (for training) and ngrok (for running the dashboard)
+This repository contains two machine learning projects focused on cancer patient analysis and doctor-patient conversation classification. The goal is to leverage structured health data and Natural Language Processing (NLP) techniques to improve patient risk assessment and emergency detection.
 
-3. Expected Outcomes
+## Projects
+
+### 1. Cancer Patient Analysis (KNN & Random Forest)
+
+This project applies classification techniques using K-Nearest Neighbors (KNN) and Random Forest (RF) to analyze cancer patient data. The dataset includes 23 health-related features to predict patient risk levels (High, Medium, Low). Hyperparameter tuning and cross-validation are used to optimize model performance.
+
+#### **Dataset**
+
+The dataset consists of 1000 patient records with the following features:
+
+- **Demographics:** Age, Gender
+- **Health Factors:** Smoking, Alcohol Use, Obesity, Genetic Risk
+- **Symptoms:** Chest Pain, Fatigue, Weight Loss, Coughing Blood
+- **Target Variable:** Level (Converted to `Level_numeric`: High → 1, Medium → 2, Low → 3)
+
+#### **Models Implemented**
+
+- K-Nearest Neighbors (KNN)
+- Random Forest (RF) Classifier
+
+#### **Technologies Used**
+
+- Python
+- Pandas, NumPy
+- Scikit-Learn (sklearn)
+- Matplotlib, Seaborn (for visualization)
+- Google Sheets API (gspread)
+
+---
+
+### 2. Doctor-Patient Conversation Analysis (NLP)
+
+This project analyzes doctor-patient conversations using NLP to extract insights, detect emergency cases, and classify conversations into different risk levels. The aim is to identify symptoms, assess patient distress, and flag high-risk cases that need immediate attention.
+
+#### **Key Components**
+
+- **Data Preprocessing & Cleaning:** Removing noise (special characters, numbers, stopwords) and standardizing text using lemmatization.
+- **Exploratory Data Analysis (EDA):** Identifying common symptoms, treatment discussions, and emotional trends.
+- **Sentiment Analysis:** Classifying patient conversations as positive, neutral, or negative using TextBlob/VADER.
+- **Symptom and Risk Classification:** Training a model (Random Forest, CountVectorizer) to classify conversations into low-risk and high-risk based on symptoms and distress levels.
+- **Emergency Detection System:** Detecting critical symptoms (e.g., severe pain, fatigue, dizziness, bleeding, tumor growth) and psychological distress (e.g., anxiety, hopelessness, fear) using keyword detection and NLP models.
+- **Interactive Dashboard for Insights:** Developing a dashboard (Streamlit/Dash) to visualize findings and flag emergency cases.
+![Alt Text](Capture.png)
+
+#### **Technologies Used**
+
+- Python
+- Pandas, NumPy
+- Matplotlib, Seaborn
+- NLTK, TextBlob
+- Scikit-learn (sklearn)
+- WordCloud
+- Dash/Streamlit (for visualization)
+- Google Colab (for training)
+- ngrok (for running the dashboard)
+
+---
+
+## Expected Outcomes
+
 ✅ A structured and cleaned dataset from cancer patient conversations
 ✅ EDA insights on symptoms, treatments, and emotional impact
 ✅ A sentiment classification model to understand patient distress
@@ -27,24 +71,41 @@ Deployment: Google Colab (for training) and ngrok (for running the dashboard)
 ✅ An emergency detection system that flags urgent cases
 ✅ An interactive dashboard to visualize findings
 
-# cancer patient analysis(kNN & RF)
-This model is designed for classification tasks using K-Nearest Neighbors (KNN) and Random Forest, leveraging structured data from Google Sheets. It aims to categorize entities based on extracted features and optimize performance using hyperparameter tuning and cross-validation.
-This project analyzed a dataset containing 23 health-related features of cancer patients. It explores different machine learning techniques to predict risk levels (High, Medium, Low) and optimize model accuracy.
+## Installation & Usage
+
+### Prerequisites
+
+Ensure you have the following dependencies installed:
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn nltk textblob wordcloud dash streamlit gspread
+```
+
+### Running the Models
+
+1. **Cancer Patient Analysis:**
+   ```bash
+   python cancer_analysis.py
+   ```
+2. **Doctor-Patient Conversation Analysis:**
+   ```bash
+   python nlp_analysis.py
+   ```
+
+### Running the Dashboard
+
+```bash
+python run dashboard.py
+```
 
 
-1. Models Implemented:
-K-Nearest Neighbors (KNN)
-Random Forest (RF) Classifier
 
-2. Dataset
-The dataset contains 1000 patient records with features such as:
-Demographics: Age, Gender
-Health Factors: Smoking, Alcohol Use, Obesity, Genetic Risk
-Symptoms: Chest Pain, Fatigue, Weight Loss, Coughing Blood
-Target Variable: Level (Converted to Level_numeric: High → 1, Medium → 2, Low → 3)
-3. Technologies Used
-Python
-Pandas, NumPy
-Scikit-Learn (sklearn)
-Matplotlib, Seaborn (for visualization)
-Google Sheets API (gspread)
+! Feel free to submit issues or pull requests for improvements.
+
+## License
+
+This project is licensed under the MIT License.
+
+
+
+
