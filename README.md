@@ -34,7 +34,7 @@ The dataset consists of 1000 patient records with the following features:
 
 ---
 
-### 2. Doctor-Patient Conversation Analysis (NLP)
+### 2. Doctor-Patient Conversation Analysis (NLP) - Healthcare Emergency Alert System
 
 This project analyzes doctor-patient conversations using NLP to extract insights, detect emergency cases, and classify conversations into different risk levels. The aim is to identify symptoms, assess patient distress, and flag high-risk cases that need immediate attention.
 
