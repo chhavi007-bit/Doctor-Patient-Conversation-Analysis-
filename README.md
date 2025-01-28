@@ -46,6 +46,10 @@ This project analyzes doctor-patient conversations using NLP to extract insights
 - **Symptom and Risk Classification:** Training a model (Random Forest, CountVectorizer) to classify conversations into low-risk and high-risk based on symptoms and distress levels.
 - **Emergency Detection System:** Detecting critical symptoms (e.g., severe pain, fatigue, dizziness, bleeding, tumor growth) and psychological distress (e.g., anxiety, hopelessness, fear) using keyword detection and NLP models.
 - **Interactive Dashboard for Insights:** Developing a dashboard (plotly/Dash) to visualize findings and flag emergency cases.
+- **Calander Intgration with cal.com** A unique meeting link is generated.
+ Patients can visit the link to customize their meeting schedule.
+ During the booking process, they are required to provide their name and email.
+ Upon successful booking, they receive a confirmation email with meeting details.
 ## 📊 Dashboard Preview  
 ![analyzer](https://github.com/user-attachments/assets/a80473b9-a7bd-445c-9a51-463121c04bb5)
 
@@ -74,6 +78,7 @@ This project analyzes doctor-patient conversations using NLP to extract insights
 ✅ A trained ML model to classify conversations into low-risk and high-risk
 ✅ An emergency detection system that flags urgent cases
 ✅ An interactive dashboard to visualize findings
+✅ An integration cal.com to schedule a Meeting with Doctor
 
 ## Installation & Usage
 
@@ -82,26 +87,8 @@ This project analyzes doctor-patient conversations using NLP to extract insights
 Ensure you have the following dependencies installed:
 
 ```bash
-pip install pandas numpy matplotlib seaborn scikit-learn nltk textblob wordcloud dash streamlit gspread
+pip install pandas numpy matplotlib seaborn scikit-learn nltk textblob wordcloud dash plotly gspread
 ```
-
-### Running the Models
-
-1. **Cancer Patient Analysis:**
-   ```bash
-   python cancer_analysis.py
-   ```
-2. **Doctor-Patient Conversation Analysis:**
-   ```bash
-   python nlp_analysis.py
-   ```
-
-### Running the Dashboard
-
-```bash
-python run dashboard.py
-```
-
 
 
 ! Feel free to submit issues or pull requests for improvements.
