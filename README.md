@@ -50,10 +50,16 @@ This project analyzes doctor-patient conversations using NLP to extract insights
  Patients can visit the link to customize their meeting schedule.
  During the booking process, they are required to provide their name and email.
  Upon successful booking, they receive a confirmation email with meeting details.
-## 📊 Dashboard Preview  
-![analyzer](https://github.com/user-attachments/assets/a80473b9-a7bd-445c-9a51-463121c04bb5)
 
 
+
+#### **AI-Powered Healthcare Risk Detection**
+My solution uses AI-powered risk detection and real-time monitoring to assess patient symptoms remotely. Patients fill out an online questionnaire, and our system analyzes their responses to detect potential health risks. If a high risk is found, the system alerts doctors immediately, allowing for quick medical response. This improves patient safety while reducing unnecessary hospital visits.
+
+**Workflow**
+Patient Dashboard – Collects patient information and assesses health risks.
+Doctor’s Dashboard – Organizes patient data into a table for further analysis and medical decisions.
+Visualization Board – Analyzes dynamic patient data for trends and insights.
 
 
 #### **Technologies Used**
@@ -67,6 +73,8 @@ This project analyzes doctor-patient conversations using NLP to extract insights
 - Dash/plotly (for visualization)
 - Google Colab (for training)
 - ngrok (for running the dashboard)
+- streamlit
+- joblib 
 
 ---
 
